@@ -1,0 +1,120 @@
+.navbar{
+    width: 100%;
+    height:80px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999;
+
+    .navbar-logo{
+        display: flex;
+        align-items: center;
+
+        .navbar-brand{
+            padding: 0 20px;
+        }
+        .hamburger::before {
+            content: "\2630";
+        }
+        .hamburger{
+            align-items: center;
+            padding: 0 20px;
+            display: none;
+            user-select: none;
+            font-size: 20px;
+            height: 20px;
+        }
+    }
+    .nav-menus{
+        display: flex;
+        gap: 20px;
+
+        .checkbox-hamburger{
+            display: none;
+            padding: 0 20px;
+        }
+        .menus{
+            display: flex;
+            gap: 20px;
+        
+            .text-menu{
+                font-size: 12px;
+                line-height: 14.52px;
+                text-align: left;
+                color: #1D2426;
+                margin: 0;
+            }
+        }
+        .menu-direct-action{
+            border: 1.5px solid rgba(36, 48, 51, 1);
+            border-radius: 14px;
+            padding: 5px 10px;
+            margin: 0 10px;
+        }
+        .menu-direct-action:hover{
+            background: rgba(235, 241, 242, 1);
+        }
+    }
+}
+.sticky-navbar{
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 9999;
+}
+
+@media screen and (max-width:600px) {
+    .navbar{
+        .nav-menus{
+            .menus{
+                display: none;
+                
+                li{
+                    margin: 30px 10px;
+                }
+            }
+
+            #checkbox-toggle-hamburger:not(:checked) ~ .menus {
+                display: none;
+            }
+
+            #checkbox-toggle-hamburger:checked ~ .menus {
+                display: block;
+                position: absolute;
+                right: 0;
+                left: 0;
+                top: 60px;
+                padding: 0px 10px;
+                background-color: #fff;
+                border-radius: 0px 0px 10px 10px;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                z-index: 999;
+            }
+        }
+        .navbar-logo{
+            .navbar-brand{
+                padding: 0;
+            }
+            .hamburger{
+                line-height: 0.75;
+                padding: 0 15px;
+                display: block;
+            }
+            /* #checkbox-toggle-hamburger:checked ~ .navbar .navbar-logo .hamburger::before {
+                content: '\2715';
+            } */
+        }
+    }
+
+}
+@media screen and (max-width: 320px) {
+    .navbar{
+        .nav-menus{
+            .menu-direct-action{
+                padding: 3px 6px;
+                font-size: 14px;
+            }
+        }
+    }
+}

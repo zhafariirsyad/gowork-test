@@ -1,0 +1,108 @@
+/* CSS for The Second Section */
+.text-title-find-plans{
+    font-size: 24px;
+    line-height: 32.68px;
+    padding: 16px;
+    text-align: center;
+}
+.row-find-plans{
+    display: grid;
+    grid-template-columns: 100%;
+
+    .col-find-plans{
+        margin-bottom: 20px;
+    }
+    
+    .card{
+        border: 1px solid #DAD3CE;
+        border-radius: 16px;
+        margin: 0 10px;
+
+        .card-img{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+        }
+        .card-body{
+            padding: 10px;
+
+            .plan-package{
+                font-size: 18px;
+                line-height: 26px;
+                text-align: center;
+            }
+            .plan-description{
+                font-size: 11px;
+                line-height: 16.5px;
+            }
+            .benefits{
+                display:grid;
+                grid-template-columns: 10% 90%;
+                border-top: 1px dashed #92A2A6;
+                img{
+                    padding: 9px 0;
+                }
+                .plan-benefits{
+                    font-size: 10px;
+                    line-height: 13.62px;
+                }
+            }
+        }
+        .card-footer{
+            background-color: #FCF4ED;
+            text-align: center;
+            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 16px;
+
+            .starts-from{
+                font-size: 12px;
+                line-height: 18px;
+                margin: 0;
+                padding-top: 10px;
+            }
+            .plan-price{
+                font-size: 16px;
+                line-height: 21.79px;
+                margin: 0;
+            }
+            .plan-pax-mont{
+                font-size: 13px;
+                line-height: 17.7px;
+                margin: 0;
+                padding-bottom: 10px;
+            }
+        }
+    }
+    .text-vat{
+        font-size: 12px;
+        line-height: 19.61px;
+        text-align: right;
+        padding:0 10px;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .row-find-plans{
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .row-find-plans{
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .row-find-plans{
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px){
+    .row-find-plans{
+        grid-template-columns: 50% 50%;
+    }
+}
+/* End of CSS for The Second Section */

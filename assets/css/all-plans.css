@@ -1,0 +1,53 @@
+/* CSS for The Fourth Section */
+
+/* Title all plans */
+.text-all-plans{
+    padding: 16px;
+    font-size: 26px;
+    line-height: 35.41px;
+    margin: 0px;
+}
+/* End of title all plans */
+
+/* Wrapper for list of plans */
+.row-list-of-plans{
+    display:grid;
+    /* Default : 1 row 1 column */
+    grid-template-columns: 1fr;
+
+    .plan{
+        padding: 10px 16px;
+    }
+
+    .plan > .title{
+        font-size: 22px;
+        line-height: 29.96px;
+        margin: 0px;
+    }
+    .plan > .description{
+        font-size: 16px;
+        line-height: 27.2px;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .row-list-of-plans{
+        /* 1 row 2 columns */
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .row-list-of-plans{
+        /* 1 row 2 columns */
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .row-list-of-plans{
+        /* 1 row 2 columns */
+        grid-template-columns: 1fr 1fr;
+    }
+}
+/* End of CSS for The Fourth Section */

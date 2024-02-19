@@ -1,0 +1,127 @@
+.hero-banner.desktop{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: auto;
+
+    img{
+        width:75%;
+        height:auto;
+        border-radius: 10px 0px 0px 0px;
+        align-items: end;
+    }
+    
+    .card-find-location{
+        background-color: #fff;
+        position: absolute;
+        /* border: 1px solid black; */
+        border-radius: 20px;
+        max-width: 350px;
+        height: 400px;
+        left: 10vw;
+        top: 20vw;
+        padding: 20px;
+        
+        .hero-banner-title-text{
+            font-size: 48px;
+            line-height: 48px;
+            margin: 0;
+        }
+
+        .hero-banner-description{
+            font-size: 16px;
+            line-height: 27.2px;
+        }
+    }
+}
+
+.hero-banner.mobile{
+    display: none;
+}
+
+@media screen and (min-width: 1049px) and (max-width:1230px){
+    .hero-banner.desktop{
+        .card-find-location {
+            /* border: 1px solid black; */
+            max-width: 350px;
+            height: 350px;
+            left: 10vw;
+            top: 15vw;
+    
+            .hero-banner-title-text{
+                font-size: 32px;
+                line-height: 48px;
+                margin: 0;
+            }
+    
+            .hero-banner-description{
+                font-size: 12px;
+                line-height: 27.2px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 900px) and (max-width:1048px){
+    .hero-banner.desktop{
+        .card-find-location {
+            max-width: 250px;
+            height: 280px;
+            left: 10vw;
+            top: 18vw;
+    
+            .hero-banner-title-text{
+                font-size: 24px;
+                line-height: 30px;
+                margin: 0;
+            }
+    
+            .hero-banner-description{
+                font-size: 12px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 899px){
+    .hero-banner.desktop{
+        display: none;
+    }
+
+    .hero-banner.mobile{
+        display: grid;
+        grid-template-columns: 100%;
+        width: 100%;
+        height: auto;
+
+        .div-banner{
+            display:flex;
+            justify-content:end;
+
+            img{
+                width: 95%;
+                height: auto;
+            }
+        }
+
+        .card-find-location{
+            background-color: #fff;
+            border-radius: 20px;
+            margin-top: -15px;
+            height: auto;
+            left: 10vw;
+            top: 20vw;
+            padding: 20px;
+            
+            .hero-banner-title-text{
+                font-size: 32px;
+                line-height: 30px;
+                margin: 0;
+            }
+    
+            .hero-banner-description{
+                font-size: 16px;
+                line-height: 27.2px;
+            }
+        }
+    }
+}

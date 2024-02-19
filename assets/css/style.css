@@ -1,0 +1,58 @@
+@import url('typography.css');
+@import url('navbar.css');
+@import url('hero-banner.css');
+@import url('find-plans.css');
+@import url('caption.css');
+@import url('all-plans.css');
+@import url('banner-cta.css');
+@import url('footer.css');
+
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.btn-black{
+    width: 200px;
+    padding: 10px;
+    background: linear-gradient(to right, rgba(36, 48, 51, 1), rgba(13, 71, 89, 1));
+    color: white;
+    border: none;
+    border-radius: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.btn-black:hover{
+    background: linear-gradient(to right,  rgba(13, 71, 89, 1), rgba(36, 48, 51, 1));
+}
+.mt-50{
+    margin-top:50px;
+}
+.form-control{
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 10px;
+    font-size: 12px;
+}
+.container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 1201px) {
+    .mt-50{
+        margin-top: 100px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .mt-50{
+        margin-top: 100px;
+    }
+}

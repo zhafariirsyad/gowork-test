@@ -1,0 +1,423 @@
+/* CSS for The Last Section */
+/* Top Footer */
+.top-footer{
+    background: linear-gradient(270deg, #EDF5F7 0%, #E5F5FA 100%);
+    min-height: 70px;
+    padding: 17px;
+
+    .text-top-footer{
+        font-size: 12px;
+        line-height: 18px;
+        padding: 0 16px;
+    }
+}
+/* End of Top Footer */
+/* Bottom Footer */
+.bottom-footer{
+    background-color: rgba(250, 250, 250, 1);
+    padding: 17px;
+
+    .row-email-updates{
+        display: grid;
+        /* Default 1 row 1 column */
+        grid-template-columns: 100%;
+        margin: 0 16px;
+        padding: 33px 0;
+        border-bottom: 1px solid #bec9cc;
+
+        .logo-footer{
+            display: flex;
+            align-items: center;
+        }
+
+        .email-form{
+            margin-top: 20px;
+        }
+    }
+}
+/* End of Bottom Footer */
+@media screen and (min-width: 1201px) {
+    .bottom-footer{
+        .row-email-updates{
+            /* 1 row 2 columns with a size of 72:28 */
+            grid-template-columns: 72% 28%;
+
+            .email-form{
+                margin-top: 0px;
+                .form-control{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .row-contact-menus.desktop{
+        display: grid;
+        /* 1 row 5 columns with a different sizes */
+        grid-template-columns: 12% 20% 20% 20% 27%;
+        padding: 17px;
+
+        .col-contact-menus{
+            .text-menu{
+                font-size: 12px;
+                line-height: 14.52px;
+                text-align: left;
+                color: #1D2426;
+                margin: 0;
+                padding-left: 50px;
+            }
+
+            .contact{
+                display:grid;
+                /* 1 row 2 columns with a size of 10:90 */
+                grid-template-columns: 10% 90%;
+                margin-bottom: 20px;
+                .text-contact{
+                    font-size: 12px;
+                    line-height: 14.52px;
+                    color: #9e7619;
+                }
+                .text-contact:hover{
+                    color: #bf8c15;
+                }
+            }
+            .socmed{
+                display:grid;
+                /* 1 row 3 columns with same size */
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+    
+            .download{
+                display:grid;
+                /* 1 row 3 columns with a different sizes */
+                grid-template-columns: 80% 10% 10%;
+    
+                p{
+                    font-size: 14px;
+                    line-height: 19.07px;
+                    margin: 0;
+                }
+            }
+
+            .copyright{
+                margin-top: 20px;
+                p{
+                    font-size: 10px;
+                    line-height: 16px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .row-contact-menus.mobile{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .bottom-footer{
+        .row-email-updates{
+            /* 1 row 2 columns with a size of 50:50 */
+            grid-template-columns: 50% 50%;
+
+            .email-form{
+                margin-top: 0px;
+                .form-control{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .row-contact-menus.desktop{
+        display: grid;
+        /* 1 row 3 columns with a different sizes */
+        grid-template-columns: 12% 20% 20% 20% 27%;
+        padding: 17px;
+
+        .col-contact-menus{
+            .text-menu{
+                font-size: 12px;
+                line-height: 14.52px;
+                text-align: left;
+                color: #1D2426;
+                margin: 0;
+                padding-left: 50px;
+            }
+
+            .contact{
+                display:grid;
+                /* 1 row 2 columns with a size of 10:90 */
+                grid-template-columns: 10% 90%;
+                margin-bottom: 20px;
+                .text-contact{
+                    font-size: 12px;
+                    line-height: 14.52px;
+                    color: #9e7619;
+                }
+                .text-contact:hover{
+                    color: #bf8c15;
+                }
+            }
+            .socmed{
+                display:grid;
+                /* 1 row 3 columns with same size */
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+    
+            .download{
+                display:grid;
+                /* 1 row 3 columns with a different sizes */
+                grid-template-columns: 80% 10% 10%;
+    
+                p{
+                    font-size: 14px;
+                    line-height: 19.07px;
+                    margin: 0;
+                }
+            }
+
+            .copyright{
+                margin-top: 20px;
+                p{
+                    font-size: 10px;
+                    line-height: 16px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .row-contact-menus.mobile{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .bottom-footer{
+        .row-email-updates{
+            /* 1 row 2 columns with a size of 30:70 */
+            grid-template-columns: 30% 70%;
+
+            .email-form{
+                margin-top: 0px;
+            }
+        }
+        .row-contact-menus{
+            display: grid;
+        }
+    }
+
+    .row-contact-menus.desktop{
+        display: none;
+    }
+
+    .row-contact-menus.mobile{
+        padding: 17px;
+
+        .col-contact-menus{
+            .text-menu{
+                font-size: 12px;
+                line-height: 14.52px;
+                text-align: left;
+                color: #1D2426;
+                margin: 20px 0;
+            }
+            .contact-socmed{
+                display:flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+
+                .contact{
+                    .text-contact{
+                        font-size: 12px;
+                        line-height: 14.52px;
+                        margin-bottom:10px ;
+                        color: #9e7619;
+                    }
+                    .text-contact:hover{
+                        color: #bf8c15;
+                    }
+                }
+                .socmed{
+                    img{
+                        padding: 0 5px;
+                    }
+                }
+            }
+            .download{
+                display:flex;
+    
+                p{
+                    font-size: 14px;
+                    line-height: 19.07px;
+                    margin: 0;
+                }
+                img{
+                    margin: 0 10px;
+                }
+            }
+            .copyright{
+                margin-top: 20px;
+                p{
+                    font-size: 10px;
+                    line-height: 16px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px){
+    .top-footer{
+        padding: 10px;
+    }
+
+    .bottom-footer{
+        padding: 10px;
+        .row-email-updates{
+            /* 1 row 1 column */
+            grid-template-columns: 100%;
+    
+            .email-form{
+                margin-top:20px
+            }
+        }
+    }
+    
+    .row-contact-menus.desktop{
+        display: none;
+    }
+    .row-contact-menus.mobile{
+        padding: 10px;
+
+        .col-contact-menus{
+            .text-menu{
+                font-size: 12px;
+                line-height: 14.52px;
+                text-align: left;
+                color: #1D2426;
+                margin: 20px 0;
+            }
+            .contact-socmed{
+                display:flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+
+                .contact{
+                    .text-contact{
+                        font-size: 12px;
+                        line-height: 14.52px;
+                        margin-bottom:10px ;
+                        color: #9e7619;
+                    }
+                    .text-contact:hover{
+                        color: #bf8c15;
+                    }
+                }
+                .socmed{
+                    img{
+                        padding: 0 5px;
+                    }
+                }
+            }
+            .download{
+                display:flex;
+    
+                p{
+                    font-size: 14px;
+                    line-height: 19.07px;
+                    margin: 0;
+                }
+                img{
+                    margin: 0 10px;
+                }
+            }
+            .copyright{
+                margin-top: 20px;
+                p{
+                    font-size: 10px;
+                    line-height: 16px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 499px){
+
+    .row-contact-menus.desktop{
+        display: none;
+    }
+
+    .top-footer{
+        padding: 10px;
+        .text-top-footer {
+            padding: 10px;
+        }
+    }
+
+    .bottom-footer{
+        padding: 10px;
+    }
+
+    .row-contact-menus.mobile{
+        padding: 10px;
+
+        .col-contact-menus{
+            .text-menu{
+                font-size: 12px;
+                line-height: 14.52px;
+                text-align: left;
+                color: #1D2426;
+                margin: 20px 0;
+            }
+            .contact-socmed{
+                display:flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+
+                .contact{
+                    .text-contact{
+                        font-size: 12px;
+                        line-height: 14.52px;
+                        margin-bottom:10px ;
+                        color: #9e7619;
+                    }
+                    .text-contact:hover{
+                        color: #bf8c15;
+                    }
+                }
+                .socmed{
+                    img{
+                        padding: 0 5px;
+                    }
+                }
+            }
+            .download{
+                display:flex;
+    
+                p{
+                    font-size: 14px;
+                    line-height: 19.07px;
+                    margin: 0;
+                }
+                img{
+                    margin: 0 10px;
+                }
+            }
+            .copyright{
+                margin-top: 20px;
+                p{
+                    font-size: 10px;
+                    line-height: 16px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+/* End of CSS for The Last Section */
