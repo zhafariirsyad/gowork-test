@@ -1,3 +1,4 @@
+/* CSS for The First Section */
 .hero-banner.desktop{
     display: flex;
     justify-content: end;
@@ -14,7 +15,6 @@
     .card-find-location{
         background-color: #fff;
         position: absolute;
-        /* border: 1px solid black; */
         border-radius: 20px;
         max-width: 350px;
         height: 400px;
@@ -42,7 +42,6 @@
 @media screen and (min-width: 1049px) and (max-width:1230px){
     .hero-banner.desktop{
         .card-find-location {
-            /* border: 1px solid black; */
             max-width: 350px;
             height: 350px;
             left: 10vw;
@@ -125,3 +124,4 @@
         }
     }
 }
+/* End of CSS for The First Section */
